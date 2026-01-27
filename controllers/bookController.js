@@ -1,5 +1,5 @@
 // controllers/bookController.js
-const Book = require('../models/Book');
+const Book = require('../models/Books');
 
 // Get all books
 const getAllBooks = async (req, res) => {

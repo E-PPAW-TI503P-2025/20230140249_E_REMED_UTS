@@ -1,5 +1,5 @@
 // controllers/borrowController.js
-const Book = require('../models/Book');
+const Book = require('../models/Books');
 const BorrowLog = require('../models/BorrowLog');
 
 // Borrow a book

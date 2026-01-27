@@ -1,0 +1,46 @@
+// test-api.http (untuk VSCode Thunder Client/Postman)
+### Health Check
+GET http://localhost:3000/health
+
+### Get All Books (Public)
+GET http://localhost:3000/api/books
+
+### Get Single Book (Public)
+GET http://localhost:3000/api/books/1
+
+### Create Book (Admin Required)
+POST http://localhost:3000/api/books
+Content-Type: application/json
+x-user-role: admin
+
+{
+  "title": "New Book",
+  "author": "Author Name",
+  "stock": 10
+}
+
+### Update Book (Admin Required)
+PUT http://localhost:3000/api/books/1
+Content-Type: application/json
+x-user-role: admin
+
+{
+  "title": "Updated Title",
+  "stock": 5
+}
+
+### Delete Book (Admin Required)
+DELETE http://localhost:3000/api/books/1
+x-user-role: admin
+
+### Borrow Book (User Required)
+POST http://localhost:3000/api/borrow
+Content-Type: application/json
+x-user-role: user
+x-user-id: 123
+
+{
+  "bookId": 1,
+  "latitude": -6.2088,
+  "longitude": 106.8456
+}
