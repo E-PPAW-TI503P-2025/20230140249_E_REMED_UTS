@@ -40,7 +40,8 @@ PINJAM BUKU
 
 
 CEK DETAIL BUKU 
-<img width="1899" height="877" alt="image" src="https://github.com/user-attachments/assets/fb604667-be74-473e-a46a-a2377cb1681d" />
+<img width="1919" height="675" alt="image" src="https://github.com/user-attachments/assets/0b6ce74b-dce7-4279-9d76-abdd2d66cad8" />
+
 
 HALAMAN ADMIN 
 <img width="957" height="874" alt="image" src="https://github.com/user-attachments/assets/58b31fdf-e4df-4ca0-939a-5aea746ea959" />
@@ -55,6 +56,8 @@ UPDATE BOOK
 <img width="1919" height="860" alt="image" src="https://github.com/user-attachments/assets/199b308e-971a-4f79-8348-0e7ab7a28eee" />
 
 
+DETAIL BOOK (ADMIN)
+<img width="1919" height="412" alt="image" src="https://github.com/user-attachments/assets/a7246dc8-59f7-4df6-89d9-a09ff321ff96" />
 
 DELETE BOOK 
 <img width="1918" height="967" alt="image" src="https://github.com/user-attachments/assets/fc563266-04db-4818-982e-b82a22a138e4" />
