@@ -1,4 +1,4 @@
-// src/components/BorrowForm.js - VERSION BARU & FINAL
+// src/components/BorrowForm.js - VERSION FIXED (no bootstrap.Modal)
 import { borrowAPI, bookAPI, auth } from '../utils/api.js';
 
 export default function BorrowForm({ bookId = null }) {
@@ -255,32 +255,13 @@ export default function BorrowForm({ bookId = null }) {
       </div>
     </div>
     
-    <!-- Success Modal Template -->
-    <div class="modal fade" id="successModal" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header border-0">
-            <h5 class="modal-title text-success">
-              <i class="bi bi-check-circle me-2"></i>Success!
-            </h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-          </div>
-          <div class="modal-body text-center py-4">
-            <i class="bi bi-check-circle text-success" style="font-size: 3rem;"></i>
-            <h4 class="mt-3 text-success">Book Borrowed Successfully!</h4>
-            <p id="success-message" class="text-muted">Your book has been borrowed.</p>
-          </div>
-          <div class="modal-footer border-0 justify-content-center">
-            <button type="button" class="btn btn-success" data-bs-dismiss="modal" id="continue-btn">
-              Continue
-            </button>
-          </div>
-        </div>
-      </div>
+    <!-- Success Message DIV (bukan modal) -->
+    <div id="success-message-div" class="d-none">
+      <!-- Pesan akan ditampilkan di sini -->
     </div>
   `;
   
-  // Add event listeners - VERSION SEDERHANA & PASTI WORK
+  // Add event listeners
   setTimeout(() => {
     // Helper untuk safe navigation
     const safeNavigate = (hash) => {
@@ -378,38 +359,32 @@ export default function BorrowForm({ bookId = null }) {
             const response = await borrowAPI.borrow(borrowData);
             const result = response.data;
             
-            // Show success modal
-            const modal = new bootstrap.Modal(container.querySelector('#successModal'));
-            container.querySelector('#success-message').innerHTML = `
-              You have successfully borrowed "<strong>${book.title}</strong>"<br>
-              <small class="text-muted">Remaining stock: ${result.data.remainingStock}</small>
+            // Tampilkan pesan sukses dengan alert sederhana
+            const successMsg = `
+              ✅ Book Borrowed Successfully!\n\n
+              📖 You have borrowed: "${book.title}"\n
+              👤 Author: ${book.author}\n
+              📚 Remaining stock: ${result.data.remainingStock}\n
+              📍 Borrowed from location:\n
+                Latitude: ${borrowData.latitude}\n
+                Longitude: ${borrowData.longitude}
             `;
             
-            modal.show();
+            alert(successMsg);
             
-            // Handle continue button
-            container.querySelector('#continue-btn').addEventListener('click', () => {
-              modal.hide();
-              safeNavigate('books');
-              window.dispatchEvent(new CustomEvent('booksUpdated'));
-            });
-            
-            // Auto redirect after 3 seconds
-            setTimeout(() => {
-              if (document.querySelector('#successModal.show')) {
-                modal.hide();
-                safeNavigate('books');
-                window.dispatchEvent(new CustomEvent('booksUpdated'));
-              }
-            }, 3000);
+            // Navigate back to books
+            safeNavigate('books');
+            window.dispatchEvent(new CustomEvent('booksUpdated'));
             
           } catch (error) {
             console.error('Borrow error:', error);
-            alert('Failed to borrow book: ' + (error.response?.data?.error || error.message));
+            alert('❌ Failed to borrow book: ' + (error.response?.data?.error || error.message));
             
             const submitBtn = container.querySelector('#submit-borrow-btn');
-            submitBtn.disabled = false;
-            submitBtn.innerHTML = '<i class="bi bi-check-circle me-2"></i>Borrow Book';
+            if (submitBtn) {
+              submitBtn.disabled = false;
+              submitBtn.innerHTML = '<i class="bi bi-check-circle me-2"></i>Borrow Book';
+            }
           }
         });
       }

@@ -6,7 +6,7 @@ import BookList from './components/BookList.js';
 import BookForm from './components/BookForm.js';
 import BorrowForm from './components/BorrowForm.js';
 import { auth } from './utils/api.js';
-
+import BookDetails from './components/BookDetails.js'; 
 import 'bootstrap';
 
 const app = document.getElementById('app');
@@ -95,6 +95,15 @@ async function router() {
       }
       content = BorrowForm({ bookId: param });
       break;
+
+      case 'book-details':
+    console.log('ROUTER: Rendering BookDetails, ID:', param);
+    if (param) {
+      content = await BookDetails({ bookId: param });
+    } else {
+      window.location.hash = 'books';
+    }
+    break;
       
     default:
       console.log('ROUTER: Rendering Home (default)');

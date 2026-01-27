@@ -197,11 +197,13 @@ export default async function BookList() {
       };
       
       // Handle view details
-      addSafeButtonClick('.view-details-btn', (button) => {
-        const bookId = button.dataset.bookId;
-        console.log('View details for book:', bookId);
-        window.location.hash = `book-details/${bookId}`;
-      });
+    addSafeButtonClick('.view-details-btn', (button) => {
+  const bookId = button.dataset.bookId;
+  console.log('View details for book:', bookId);
+  
+  // PASTIKAN mengarah ke book-details
+  window.location.hash = `book-details/${bookId}`;
+});
       
       // Handle edit book (admin only)
       if (auth.isAdmin()) {
