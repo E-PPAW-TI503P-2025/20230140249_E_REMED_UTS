@@ -26,3 +26,40 @@ Model Database:
 <img width="1336" height="577" alt="image" src="https://github.com/user-attachments/assets/96e44343-f1c4-46dd-8411-f5a512045c60" />
 
 
+FRONTEND 
+
+DASHBOARD 
+<img width="1147" height="770" alt="image" src="https://github.com/user-attachments/assets/d272c956-655d-49e1-b555-d753b61fc7f8" />
+
+
+CEK KETERSEDIAAN BUKU 
+<img width="1917" height="658" alt="image" src="https://github.com/user-attachments/assets/a5e63630-583d-4852-9c32-79cc337ca002" />
+
+PINJAM BUKU 
+<img width="1919" height="801" alt="image" src="https://github.com/user-attachments/assets/883333a1-0926-4a3c-9f80-21e467d932a6" />
+
+
+CEK DETAIL BUKU 
+<img width="1899" height="877" alt="image" src="https://github.com/user-attachments/assets/fb604667-be74-473e-a46a-a2377cb1681d" />
+
+HALAMAN ADMIN 
+<img width="957" height="874" alt="image" src="https://github.com/user-attachments/assets/58b31fdf-e4df-4ca0-939a-5aea746ea959" />
+
+DETAIL BUKU (ADMIN)
+<img width="1099" height="755" alt="image" src="https://github.com/user-attachments/assets/45f97fb2-1171-403f-a252-c028552ce111" />
+
+ADD BOOK 
+<img width="1919" height="885" alt="image" src="https://github.com/user-attachments/assets/25bdd062-ce89-48a8-91db-42a3acf47a39" />
+
+UPDATE BOOK 
+<img width="1919" height="860" alt="image" src="https://github.com/user-attachments/assets/199b308e-971a-4f79-8348-0e7ab7a28eee" />
+
+
+
+DELETE BOOK 
+<img width="1918" height="967" alt="image" src="https://github.com/user-attachments/assets/fc563266-04db-4818-982e-b82a22a138e4" />
+
+
+
+
+
