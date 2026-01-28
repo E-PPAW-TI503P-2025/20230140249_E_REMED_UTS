@@ -33,31 +33,37 @@ DASHBOARD
 
 
 CEK KETERSEDIAAN BUKU 
-<img width="1917" height="658" alt="image" src="https://github.com/user-attachments/assets/a5e63630-583d-4852-9c32-79cc337ca002" />
+<img width="1906" height="855" alt="image" src="https://github.com/user-attachments/assets/eefad2eb-3218-46e8-877d-6caec558c450" />
+
 
 PINJAM BUKU 
-<img width="1919" height="801" alt="image" src="https://github.com/user-attachments/assets/883333a1-0926-4a3c-9f80-21e467d932a6" />
+<img width="1900" height="876" alt="image" src="https://github.com/user-attachments/assets/dde99ef5-3451-44bc-a6c7-0bad80804e93" />
+
 
 
 CEK DETAIL BUKU 
-<img width="1919" height="675" alt="image" src="https://github.com/user-attachments/assets/0b6ce74b-dce7-4279-9d76-abdd2d66cad8" />
+<img width="1893" height="872" alt="image" src="https://github.com/user-attachments/assets/8d7c11f3-03db-4301-968e-a3c0aeceeefa" />
 
 
 HALAMAN ADMIN 
 <img width="957" height="874" alt="image" src="https://github.com/user-attachments/assets/58b31fdf-e4df-4ca0-939a-5aea746ea959" />
 
 DETAIL BUKU (ADMIN)
-<img width="1099" height="755" alt="image" src="https://github.com/user-attachments/assets/45f97fb2-1171-403f-a252-c028552ce111" />
+<img width="1901" height="866" alt="image" src="https://github.com/user-attachments/assets/85977bbf-d458-4efd-9391-f60589834ef2" />
+
 
 ADD BOOK 
-<img width="1919" height="885" alt="image" src="https://github.com/user-attachments/assets/25bdd062-ce89-48a8-91db-42a3acf47a39" />
+<img width="1902" height="874" alt="image" src="https://github.com/user-attachments/assets/60c3e0bf-f209-43e1-b47e-12059a8081b6" />
+
 
 UPDATE BOOK 
-<img width="1919" height="860" alt="image" src="https://github.com/user-attachments/assets/199b308e-971a-4f79-8348-0e7ab7a28eee" />
+<img width="1903" height="873" alt="image" src="https://github.com/user-attachments/assets/b520d52f-10f2-4aca-b183-1ad6dce97694" />
+
 
 
 DETAIL BOOK (ADMIN)
-<img width="1919" height="412" alt="image" src="https://github.com/user-attachments/assets/a7246dc8-59f7-4df6-89d9-a09ff321ff96" />
+<img width="1902" height="873" alt="image" src="https://github.com/user-attachments/assets/f7291631-4828-4524-bfce-acaf37dc3dfb" />
+
 
 DELETE BOOK 
 <img width="1918" height="967" alt="image" src="https://github.com/user-attachments/assets/fc563266-04db-4818-982e-b82a22a138e4" />
