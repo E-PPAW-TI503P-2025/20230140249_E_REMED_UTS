@@ -67,7 +67,7 @@ DETAIL BOOK (ADMIN)
 
 
 DELETE BOOK 
-<img width="1918" height="967" alt="image" src="https://github.com/user-attachments/assets/fc563266-04db-4818-982e-b82a22a138e4" />
+<img width="1898" height="974" alt="image" src="https://github.com/user-attachments/assets/215a2941-830e-4dc4-9fed-e3e05e289079" />
 
 
 
