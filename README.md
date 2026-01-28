@@ -29,7 +29,13 @@ Model Database:
 FRONTEND 
 
 DASHBOARD 
-<img width="1147" height="770" alt="image" src="https://github.com/user-attachments/assets/d272c956-655d-49e1-b555-d753b61fc7f8" />
+<img width="1895" height="872" alt="image" src="https://github.com/user-attachments/assets/930bfc91-7b07-49f0-ad68-84a215feabe8" />
+
+
+
+SELECT ROLE 
+<img width="1919" height="884" alt="image" src="https://github.com/user-attachments/assets/aa73d3d5-df9c-4cf5-8bb2-97c98ec86e67" />
+
 
 
 CEK KETERSEDIAAN BUKU 
