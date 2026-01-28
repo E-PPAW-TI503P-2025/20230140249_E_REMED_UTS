@@ -46,7 +46,8 @@ CEK DETAIL BUKU
 
 
 HALAMAN ADMIN 
-<img width="957" height="874" alt="image" src="https://github.com/user-attachments/assets/58b31fdf-e4df-4ca0-939a-5aea746ea959" />
+<img width="1907" height="879" alt="image" src="https://github.com/user-attachments/assets/3bd474dd-6c14-4e89-b1fd-2910807deb52" />
+
 
 DETAIL BUKU (ADMIN)
 <img width="1901" height="866" alt="image" src="https://github.com/user-attachments/assets/85977bbf-d458-4efd-9391-f60589834ef2" />
