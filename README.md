@@ -1,3 +1,164 @@
+🚀 Cara Menjalankan Aplikasi
+Prerequisites
+Node.js (v14 atau lebih baru)
+
+npm atau yarn
+
+Database (MySQL/PostgreSQL/SQLite)
+
+Git
+
+Option 1: Menggunakan Vite Dev Server (Rekomendasi)
+Backend Setup
+bash
+# 1. Clone repository (jika ada)
+git clone <repository-url>
+cd library-system/backend
+
+# 2. Install dependencies
+npm install
+
+# 3. Konfigurasi database
+# Buat file .env dengan konten:
+DB_HOST=localhost
+DB_NAME=library_db
+DB_USER=root
+DB_PASS=password
+DB_DIALECT=mysql  # atau postgres, sqlite
+JWT_SECRET=your-secret-key
+
+# 4. Setup database
+# Untuk MySQL:
+mysql -u root -p
+CREATE DATABASE library_db;
+
+# 5. Jalankan server backend
+npm start
+# atau untuk development dengan auto-reload:
+npm run dev
+Frontend Setup
+bash
+# 1. Buka terminal baru
+cd library-system/frontend
+
+# 2. Install dependencies
+npm install
+
+# 3. Jalankan development server
+npm run dev
+
+# 4. Buka browser ke:
+# http://localhost:5173
+Option 2: Menggunakan Live Server Extension (VS Code)
+Backend Setup (sama seperti di atas)
+bash
+cd backend
+npm install
+npm start
+Frontend Setup
+bash
+cd frontend
+
+# 1. Install http-server secara global
+npm install -g http-server
+
+# 2. Jalankan server
+http-server -p 8080 --cors
+
+# 3. Buka browser ke:
+# http://localhost:8080
+Option 3: Menggunakan XAMPP/WAMPP (PHP Developers)
+Backend Setup
+bash
+cd backend
+npm install
+npm start
+# Backend berjalan di port 3000
+Frontend Setup
+Letakkan folder frontend di htdocs (XAMPP) atau www (WAMPP)
+
+Akses melalui: http://localhost/frontend
+
+Pastikan backend berjalan di port 3000
+
+🔧 Konfigurasi Database
+MySQL
+sql
+CREATE DATABASE library_db;
+GRANT ALL PRIVILEGES ON library_db.* TO 'username'@'localhost' IDENTIFIED BY 'password';
+FLUSH PRIVILEGES;
+PostgreSQL
+sql
+CREATE DATABASE library_db;
+CREATE USER username WITH PASSWORD 'password';
+GRANT ALL PRIVILEGES ON DATABASE library_db TO username;
+SQLite
+javascript
+// Di config/database.js
+dialect: 'sqlite',
+storage: './database.sqlite'
+🌐 API Endpoints
+Books
+text
+GET    /api/books              # Get all books
+GET    /api/books/:id          # Get book by ID
+POST   /api/books              # Create new book (admin only)
+PUT    /api/books/:id          # Update book (admin only)
+DELETE /api/books/:id          # Delete book (admin only)
+Borrow
+text
+POST   /api/borrow             # Borrow a book (user only)
+GET    /api/borrow/user/:id    # Get user's borrowed books
+GET    /api/borrow             # Get all borrowed books (admin only)
+DELETE /api/borrow/:id         # Return a book
+Headers yang Diperlukan
+text
+x-user-role: admin/user
+x-user-id: <user-id>
+👨‍💻 Akun Testing
+Admin
+Role: admin
+
+User ID: admin1
+
+Permissions: Full access
+
+User
+Role: user
+
+User ID: 123 (atau angka random)
+
+Permissions: Borrow books only
+
+🔍 Cara Penggunaan
+1. Memulai Aplikasi
+Buka http://localhost:5173 (atau port yang sesuai)
+
+Pilih role (Admin atau User)
+
+Jika User, set User ID
+
+Mulai jelajahi sistem
+
+2. Sebagai Administrator
+Kelola Buku: Tambah, edit, hapus buku
+
+Pantau Peminjaman: Lihat semua user yang meminjam buku
+
+Export Data: Export data peminjaman ke CSV
+
+Force Return: Kembalikan buku untuk user
+
+3. Sebagai User
+Jelajahi Koleksi: Lihat semua buku yang tersedia
+
+Pinjam Buku: Pinjam buku dengan pelacakan lokasi
+
+Lihat Peminjaman: Track buku yang sedang dipinjam
+
+Kembalikan Buku: Kembalikan buku sebelum jatuh tempo
+
+Database akan otomatis tersinkronisasi dan tabel akan dibuat jika belum ada.
 GET /api/books : Melihat semua buku
 <img width="1829" height="889" alt="image" src="https://github.com/user-attachments/assets/65ba3daf-8a15-404b-bc34-e85a13805f68" />
 GET /api/books/:id : Detail buku.
