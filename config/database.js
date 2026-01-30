@@ -7,4 +7,5 @@ const sequelize = new Sequelize('library_db', 'root', 'Mnbvcxz123.', {
   logging: false
 });
 
+
 module.exports = sequelize;
