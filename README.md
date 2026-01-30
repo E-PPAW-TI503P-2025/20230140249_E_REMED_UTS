@@ -173,6 +173,7 @@ BorrowLog {
   id: INTEGER (PK, AutoIncrement)
   userId: INTEGER (NOT NULL)
   bookId: INTEGER (FK → Book.id)
+  borrowDate: DATE (DEFAULT: NOW)
   latitude: FLOAT (NOT NULL)
   longitude: FLOAT (NOT NULL)
 }
